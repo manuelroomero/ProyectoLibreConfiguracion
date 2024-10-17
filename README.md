@@ -1,6 +1,6 @@
 # Práctica de comandos de Git
 #### Libre configuración - Guillermo Bárcenas López, Francisco Mejías de Matos, Mario Alcaide Perez y Felipe Alonso Fernandez <br>
-![Foto de la portada](images/portada.png)
+![Foto de la portada](images/portada.jpg)
 ---
 Esta pratica tiene como fin poder aplicar Git a nuestros proyectos, practicaremos los comandos básicos como add, commit, push y algunos mas avanzados como Merge 
 
@@ -84,7 +84,7 @@ Vamos a crear una nueva rama:
    git checkout -b <nombre_apellidos_v2>
    ~~~
    ![Creacion nueva rama](images/10.png)<br><br>
-   Una vez creada volveremos a la rama v1 y crearemos command_history2.txt, al que añadiremos un par de líneas simbólicas.
+   Una vez creada volveremos a la rama v1 y crearemos command_history2.txt, al que añadiremos un par de líneas simbólicas.<br><br>
    ![Creacion command_history2](images/11.png)<br><br>
    Ahora volveremos a la rama v2 y haremos el merge:
    ~~~
