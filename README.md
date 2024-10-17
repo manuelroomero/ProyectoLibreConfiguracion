@@ -150,8 +150,8 @@ Para revertir un commit necesitamos visualizar el historial de commits realizado
    git revert <id>
    git push
    ~~~
-   ![revert](images/20.png)<br><br>
-   ![salir revert](images/21.png)<br><br>
+   ![revert](images/21.png)<br><br>
+   ![salir revert](images/20.png)<br><br>
 ---
 7. **Cherry Pick**<br>
 Vamos a crear una nueva rama:
@@ -175,15 +175,15 @@ Vamos a crear una nueva rama:
    git commit -m "Additional changes in v3"
    git push --set-upstream origin <nombre_apellidos_v3>
    ~~~
-   ![Push rama 3](images/23.png)<br><br>
+   ![Push rama 3](images/24.png)<br><br>
 ---
 8. **Pull-request**<br>
 Desde la web de github hacemos un pull request para volcar la rama v1 en v2. le damos a contribute y Open pull request
 
    Una vez dentro le ponemos de nombre V2 y arriba a la izquierda configuramos las ramas.
    
-   Tras esto aceptamos Merge pull request y ya lo tendríamos hecho
-   ![Pull request](images/24.png)<br><br>
+   Tras esto aceptamos Merge pull request y ya lo tendríamos hecho<br><br>
+   ![Pull request](images/25.png)<br><br>
 
 ---
 9. **Listado y borrado de ramas**<br>
