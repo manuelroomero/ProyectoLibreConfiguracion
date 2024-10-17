@@ -85,7 +85,7 @@ Si hacemos git log podemos ver en la rama 2 los mismos commits que en la rama 1:
 git log
 ~~~
 ---
-4. **Stash y amend**<br>
+5. **Stash y amend**<br>
 Cambiaremos a la rama uno y añadiremos una línea en el archivo command_history.txt
 Si ponemos git status podemos comprobar que tenemos cambios sin guardar:
 ~~~
@@ -118,7 +118,7 @@ Para subirlo le añadiremos a push la opcion -f que es para forzarlo:
 git push -f
 ~~~
 ---
-5. **Revert**<br>
+6. **Revert**<br>
 Para revertir un commit necesitamos visualizar el historial de commits realizados y copiar el id del que queramos restaurar, nosotros vamos a coger el ultimo:
 ~~~
 git log
@@ -128,15 +128,49 @@ Ahora realizaremos el revert, tras ejecutarlo se nos abrirá un editro donde pod
 git revert <id>
 git push
 ~~~
-6. **Revert**<br>
+---
+7. **Cherry Pick**<br>
+Vamos a crear una nueva rama:
+~~~
+git checkout main
+git checkout -b <nombre_apellidos_v3>
+~~~
+Ahora nos iremos a la rama v1, haremos un git log y copiaremos el id del commit que queramos copiar:
+~~~
+git log
+~~~
+Volveremos a cambiar a la rama v3 y haremos el cherry-pick, para copiar el commit de la rama 1:
+~~~
+git cherry-pick <id>
+~~~
+Por útlimo subiremos los cambios al repositorio remoto:
+~~~
+git add .
+git commit -m "Additional changes in v3"
+git push
+~~~
+---
+8. **Pull-request**<br>
+Desde la web de github hacemos un pull request para volcar la rama v1 en v2. le damos a contribute y Open pull request
 
+Una vez dentro le ponemos de nombre V2 y arriba a la izquierda configuramos las ramas.
 
+Tras esto aceptamos Merge pull request y ya lo tendríamos hecho
 
-
-
-
-
-
+---
+9. **Listado y borrado de ramas**<br>
+Vamos a listar las ramas para saber el nombre y borrarlas:
+~~~
+git branch
+~~~
+   Si queremos borrar las ramas v2 y v3, no podemos estar situados en ellas, así  que nos iremos a la rama v1 y desde ahí borraremos las demás:
+~~~
+git checkout v1
+git branch -d <nombre_apellidos_v2>
+git push origin --delete <nombre_apellidos_v2>
+git branch -d <nombre_apellidos_v3>
+git push origin --delete <nombre_apellidos_v3>
+~~~
 
 
 
