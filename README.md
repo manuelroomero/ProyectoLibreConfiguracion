@@ -199,15 +199,3 @@ Vamos a listar las ramas para saber el nombre y borrarlas:
    git branch -d <nombre_apellidos_v3>
    git push origin --delete <nombre_apellidos_v3>
    ~~~
-
-
-
-
-
-
-
-
-
-
-
-[Enlace al diagrama](https://drive.google.com/file/d/1OGA-V4_20N8UnIGlXNveywVdCZCEsaSm/view?usp=sharing)<br>
