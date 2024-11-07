@@ -2,7 +2,6 @@ git init
 git clone git@github.com:guillermo20052009/ProyectoLibreConfiguracion.git
 <<<<<<< HEAD
 fallo desde la terminal
-ultimo cambio
 
 =======
 >>>>>>> parent of 18ae7b3 (Update command_history.txt)
