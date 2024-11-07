@@ -17,6 +17,11 @@ Esta pratica tiene como fin poder aplicar Git a nuestros proyectos, practicaremo
 - **Listado y borrado de Ramas**<br>
 - **Conclusiones**
 ---
+**Clave SSH**
+~~~
+ssh-keygen -t ed25519 -C "tu_correo@example.com"
+cat ~/.ssh/id_ed25519.pub
+~~~
 1. **Creación de una rama** <br>
 Partimos de un repositorio público que hemos compartido todos los integrantes del grupo para poder operar sobre él. En el primer paso cada integrante deberá clonar el repositorio usando este comando.<br><br>
    ~~~
