@@ -32,6 +32,8 @@ Partimos de un repositorio público que hemos compartido todos los integrantes d
 Para inicializar la rama en GitHub, haremos un push diferente al habitual ya que tendremos que crear también la rama en el repositorio remoto.
 Push para inicializar la rama en el repositorio remoto:<br>
    ~~~
+   git add .
+   git commit -m "Add used commands"
    git push --set-upstream origin <nombre_apellidos_v1>
    ~~~
    ![Push Primera vez](images/3.png)<br><br>
@@ -44,6 +46,7 @@ Push para inicializar la rama en el repositorio remoto:<br>
    ~~~
    git add .
    git commit -m "Add used commands"
+   git remote set-url origin git@github.com:guillermo20052009/ProyectoLibreConfiguracion
    git push --set-upstream origin <nombre_apellidos_v1>
    ~~~
    ![Commit](images/2.png)<br><br>
